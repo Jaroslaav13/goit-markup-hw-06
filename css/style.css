@@ -36,9 +36,8 @@ body{
 }
 .container{
     width: 100%;
-    max-width: 1158px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
 }
 
@@ -227,9 +226,7 @@ color: var(--ocean);
 
 
 .section-credo{
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
-    padding-top: 96px;
+       padding-top: 96px;
     padding-bottom: 96px;
 }
 .icon-box{
@@ -249,6 +246,7 @@ color: var(--ocean);
 }
 .section-work{
     padding-bottom: 120px;
+    display: none;
 }
 
 .section-list{
@@ -256,18 +254,17 @@ color: var(--ocean);
     flex-direction: column;
     width: 100%;
     gap: 72px;
-     /* gap: 24px; */
-    }
+        }
 .list-images{
     width: calc((100% - 48px) / 3);
 }   
 .list-item{
-    /* width: calc((100% - 24px * 3) / 4); */
+   
     
 }
 .section-team{
     background-color:var(--cloud);
-    padding: 120px 0;
+    padding: 96px 0;
       
 }
 
@@ -283,22 +280,24 @@ color: var(--ocean);
      }
     .section-list-team{
         display: flex;
-        gap: 24px;
-        
-        
+        flex-wrap: wrap;
+        row-gap: 72px;
+        justify-content: center;
     }
     .list-team{
         background-color: var(--white);
-        text-align: center;
-        width: calc((100% - 72px) / 4);
+        text-align: center;                
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    }
+    .photo-team{
+        margin: 0 auto;
     }
     .social-group{
         display: flex;
         gap: 24px;
         justify-content: center;
-        
+        margin-top: 8px;
     }
     .social-item{
         width: 40px;
@@ -330,15 +329,20 @@ color: var(--ocean);
     }
     .list-title{
         color: var(--navy-blue);
-        /* font-size: 20px; */
         font-weight: 500;
-        /* line-height: 1.2;
+         letter-spacing: 0.02em;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 8px;
+    
+    }
+    .list-title-team{
+        color: var(--navy-blue);
+        font-weight: 500;
         letter-spacing: 0.02em;
-         margin-bottom: 8px;  */
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
+        font-size: 20px;
+        line-height: 1.2;
         text-align: center;
         margin-bottom: 8px;
     }
@@ -347,20 +351,26 @@ color: var(--ocean);
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        /* margin-bottom: 8px; */
+        font-weight: 400;
                     
     }
 .customers{
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 .customers-list{
     display: flex;
-    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px 16px;
+    width: 100%;
 }
 .customers-item{
-    width: calc((100% - 24px * 5) / 6);
+    /* width: calc((100% - 24px * 5) / 6); */
+    width: calc((100% - 16px) / 2);
     height: 88px;
-    
+    max-width: 190px;
     
 }
 

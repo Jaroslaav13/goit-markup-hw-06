@@ -1,33 +1,134 @@
+
+/* ----------Mobile--------------- */
+
 @media screen and (min-width: 428px) {
     .container{
         max-width: 396px;
+        
     }
+
 }
+
+/* ------------Tablet---------------- */
+
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 738px;
+        
     }
     .section-credo{
         padding-top: 96px;
         padding-bottom: 96px;
     }
     .section-list{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 24px;
+        
+         width: 100%;
+        gap: 72px 24px;
         flex-direction: row;
+        flex-wrap: wrap;
         
     }
     .list-item{
     width: calc((100% - 24px) / 2);
-    margin-bottom: 72px;
-    max-width: 356px;
+     max-width: 356px;
     }
 
+    .list-title{
+        text-align: left;
+    }
+    .list-title-team{
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .section-list-team{
+        gap: 64px 24px;
+    }
+    .list-team{
+    width: calc((100% - 24px) / 2);
+    max-width: 264px;
+    }
+
+    .customers-list{
+    gap: 72px 24px;
+    justify-content: center;
+    }
+    .customers-item{
+    width: calc((100% - 48px) / 3);
+    max-width: 168px;
+    }
+}
 
 
+/* --------------desctop--------------------- */
 
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        
+    }
+
+    .section-credo {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .section-list {
+
+        width: 100%;
+        gap: 24px;
+          
+
+    }
+
+    .list-item {
+        width: calc((100% - 24px * 3) / 4);
+        
+    }
+
+    .list-title {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+       
+    }
+
+    .icon-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 264px;
+            height: 112px;
+            border-radius: 4px;
+            background: var(--cloud);
+            margin-bottom: 8px;
+            
+        }
+
+     .section-work{
+        display: block;
+        
+     }
+     .section-team{
+        padding: 120px 0;
+     }
+     .list-team{
+        width: calc((100% - 72px) / 4);
+     }
+     .customers{
+      padding: 120px 0;
+     }
+     .customers-list{
+        display: flex;
+         gap: 24px;
+     }
+    .customers-item{
+        width: calc((100% - 24px * 5) / 6);
+        max-width: 168px;
+    }
 }
 
 
