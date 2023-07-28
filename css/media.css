@@ -16,12 +16,12 @@
         max-width: 738px;
         
     }
-        .container-header {
+        /* .container-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
     
-        }
+        } */
     
         .link-nav.current {
             position: relative;
@@ -68,13 +68,14 @@
         .link-nav:active {
             text-decoration: underline;
         }
-    
+     
         .contacts {
             font-style: normal;
+            display: flex;
         }
     
         .contacts-item {
-            display: flex;
+            /* display: flex; */
             gap: 40px;
     
         }
@@ -96,7 +97,9 @@
         .contact-link:focus {
             color: var(--ocean);
         }
-
+    .menu-hamburger-btn{
+        display: none;
+    }
     .hero-section{
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -105,9 +108,9 @@
      @media (min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
      (min-resolution: 2dppx) {
-    .hero-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/herotab2x.jpg);
+       .hero-section {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)), url(../images/herotab2x.jpg);
         }
     }
     .hero-title{
