@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
-   <!-- <header class="header">
+   <header class="header">
      <div class="container container-header">
         <nav class="navigation">
            <a class="header-logo link" href="./index.html">Web<span class="color">Studio</span></a>
@@ -36,16 +36,22 @@
            </li>
         </ul>
     </address>
+    <button type="button">
+   <svg width="32" height="22">
+    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+   </svg>
+    </button>
      </div>
-   </header> -->
+   </header>
    <main>
 <!-- Hero section -->
-      <!-- <section class="hero-section">
+
+      <section class="hero-section">
        <div class="container hero-container">
          <h1 class="hero-title">Effective Solutions for Your Business</h1>
          <button class="link-button" data-modal-open type="button">Order Service</button>
        </div>
-      </section> -->
+      </section>
         <section class="section-credo">
         <div class="container">
              <h2 class="visually-hidden">Our credo</h2>
@@ -94,9 +100,18 @@
       <div class="container">
         <h2 class="section-title">What are we doing</h2>
           <ul class="section-list list">
-              <li class="list-images"><img src="./images/img1.jpg" alt="monitor" width="360"></li>
-              <li class="list-images"><img src="./images/img2.jpg" alt="telephone" width="360"></li>
-              <li class="list-images"><img src="./images/img3.jpg" alt="laptop and phone" width="360"></li>
+              <li class="list-images">
+                <img srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x" 
+                   src="./images/img1.jpg" alt="monitor" width="360">
+            </li>
+              <li class="list-images">
+                <img srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                src="./images/img2.jpg" alt="telephone" width="360">
+            </li>
+              <li class="list-images">
+                <img srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                src="./images/img3.jpg" alt="laptop and phone" width="360">
+            </li>
           </ul>
       </div>
       </section>
@@ -105,7 +120,8 @@
          <h2 class="section-title">Our Team</h2>
          <ul class="section-list-team list">
              <li class="list-team">
-                 <img class="photo-team" src="./images/img4.jpg" alt="Man Product Designer" width="265">
+                 <img class="photo-team" srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
+                 src="./images/img4.jpg" alt="Man Product Designer" width="265">
                  <div class="group">
                     <h3 class="list-title-team">Mark Guerrero</h3>
                     <p class="list-text">Product Designer</p>
@@ -142,7 +158,8 @@
                  </div>                 
              </li>
              <li class="list-team">
-                 <img class="photo-team" src="./images/img5.jpg" alt="Man Frontend Develope" width="265">
+                 <img class="photo-team" srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x"
+                 src="./images/img5.jpg" alt="Man Frontend Develope" width="265">
                  <div class="group">
                     <h3 class="list-title-team">Tom Ford</h3>
                     <p class="list-text">Frontend Developer</p>
@@ -179,7 +196,8 @@
                  </div>                 
              </li>
              <li class="list-team">
-                 <img class="photo-team" src="./images/img6.jpg" alt="Woman Marketing" width="265">
+                 <img class="photo-team" srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
+                 src="./images/img6.jpg" alt="Woman Marketing" width="265">
                  <div class="group">
                     <h3 class="list-title-team">Camila Garcia</h3>
                     <p class="list-text">Marketing</p>
@@ -216,7 +234,8 @@
                  </div>                 
              </li>
              <li class="list-team">
-                 <img class="photo-team" src="./images/img7.jpg" alt="ManUI Designe" width="265">
+                 <img class="photo-team" srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x"
+                 src="./images/img7.jpg" alt="ManUI Designe" width="265">
                  <div class="group">
                     <h3 class="list-title-team">Daniel Wilson</h3>
                     <p class="list-text">UI Designer</p>
