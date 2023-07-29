@@ -118,7 +118,7 @@ body{
 }
 .mob-site-nav{
     margin-top: 80px;
-    margin-bottom: 284px;
+    /* margin-bottom: 284px; */
         
 }
 .mob-list-nav:not(:last-child){
@@ -171,7 +171,18 @@ body{
 .mob-social-link:is(:hover, :focus) {
     background-color: var(--ocean);
 }
-.social-icon {
+ .mob-cont-info:not(:last-child){
+    margin-bottom: 40px;
+ }
+ .phone-nomber{
+    color:var(--iris);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+ }
+ .social-icon {
     fill: var(--cloud);
 }
 .menu-hamburger-btn{
