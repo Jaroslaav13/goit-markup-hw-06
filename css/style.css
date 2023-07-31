@@ -110,12 +110,15 @@ body{
     background-color: var(--white);
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: 9;
     padding: 24px 24px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    transform: translateX(100%);
+}
+.mobile-menu.is-open{
+    transform: translateX(0%);
 }
 .mob-site-nav{
     margin-top: 80px;
