@@ -3,38 +3,46 @@
 
 @media screen and (min-width: 428px) {
     .container{
-        max-width: 396px;
-        
+        max-width: 426px;
+      
     }
-    
+    .phone-nomber{
+        max-width: 418px;
+        font-size: 36px;
+    }
+    .mob-social-list {
+       justify-content: left;     
+       gap: 56px;
+     }
+}  
 
 /* ------------Tablet---------------- */
 
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 738px;
+        max-width: 766px;
         
     }
-       
+    .current::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--ocean);
+        color: var(--ocean);
+        bottom: -1px;
+        left: 0;
+    
+    }
     
         .link-nav.current {
             position: relative;
             color: var(--ocean);
         }
     
-        .current::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background: var(--ocean);
-            color: var(--ocean);
-            bottom: -1px;
-            left: 0;
-    
-        }
+       
         .site-nav {
             display: flex;
             gap: 40px;
@@ -60,31 +68,33 @@
             color: var(--ocean);
         }
     
-        .link-nav:active {
-            text-decoration: underline;
+    .link-nav:active {
+        text-decoration: underline;
         }
      
-        .contacts {
-            font-style: normal;
-            display: flex;
+    .contacts {
+        font-style: normal;
+        display: flex;
         }
     
-        .contacts-item {
-            /* display: flex; */
-            gap: 40px;
+    .contacts-item {
+        gap: 40px;
     
         }
     
         .contact-link {
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
         }
-    
+        
         .contacts-item .contact-link {
             color: var(--slate);
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            padding: 24px 0;
+            font-size: 12px;
+            letter-spacing: 0.04em;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.16;
+            display: block;   
         }
     
         .contact-link:active,
@@ -99,6 +109,7 @@
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/herotab1.jpg);
+    max-width: 768px;            
     }
      @media (min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
@@ -106,6 +117,7 @@
        .hero-section {
          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)), url(../images/herotab2x.jpg);
+        max-width: 768px;
         }
     }
     .hero-title{
@@ -161,13 +173,13 @@
         flex-wrap: wrap;
         flex-direction: row;
         align-items: baseline;
-        justify-content: center;
+        max-width: 582px;
     }
     .footer-group{
         margin-right: 24px;
     }
     .footer-box{
-        margin-left: 108px;
+        
     }
     .footer-subscription{
         flex-direction: row;
@@ -204,10 +216,20 @@
     display: flex;
         gap: 40px;
         }
+    .contacts-item .contact-link {
+        color:var(--slate);
+        font-size: 16px;
+        font-style: normal;
+         font-weight: 400;
+         line-height: 1.5;
+         letter-spacing: 0.02em;
+        
+    }
     .hero-section {
-        padding: 188px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)), url(../images/herodesctop1.jpg);
+    max-width: 1440px;
     }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -215,6 +237,7 @@
             .hero-section {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)), url(../images/herodesctop2x.jpg);
+                max-width: 1440px;
             }
         }
     .hero-title {
@@ -248,7 +271,9 @@
         letter-spacing: 0.02em;
        
     }
-
+    .list-text{
+        font-weight: 400;
+    }  
     .icon-box {
             display: flex;
             align-items: center;
@@ -293,6 +318,7 @@
      }
     .footer-group{
         margin-right: 120px;
+        margin-bottom: 0;
     }
     .footer-box{
       width: 453px;
@@ -303,6 +329,9 @@
     }
     .footer-text{
     max-width: 264px;
+    }
+    .social-section{
+        margin-bottom: 0;
     }
     .media-title{
         justify-content: left;
