@@ -79,9 +79,10 @@
     
     .contacts-item {
         gap: 40px;
-    
         }
-    
+    .cont-info:not(:last-child){
+        margin-bottom: 12px;
+    }
         .contact-link {
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             
@@ -178,8 +179,11 @@
     .footer-group{
         margin-right: 24px;
     }
-    .footer-box{
-        
+    .logo-footer{
+        justify-content: left;
+    }
+    .media-title{
+        justify-content: left;
     }
     .footer-subscription{
         flex-direction: row;
