@@ -645,14 +645,17 @@ border: 1px solid var(--ocean);
 /* ----------_________PORTFOLIO___________-------- */
 
 .portfoilo-section {
-padding: 96px 0 120px 0;
+/* padding: 96px 0 120px 0; */
+padding: 48px 0;
 }
 
 .list-btn {
     display: flex;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
+    margin-bottom: 48px;
     gap: 24px;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 }
 
 .portfolio-btn {
@@ -665,7 +668,8 @@ padding: 96px 0 120px 0;
     letter-spacing: 0.04em;
     background-color:var(--cloud);
     cursor: pointer;
-    padding: 12px 24px;
+    /* padding: 12px 24px; */
+    padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid var(--cornflower);
     background: var(--cloud);
@@ -686,13 +690,18 @@ padding: 96px 0 120px 0;
 
 .list-presentation {
     display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
+    /* flex-wrap: wrap; */
+    /* gap: 48px 24px; */
+    flex-direction: column;
+    gap: 24px;
+
    
 }
 
 .list-made {
-    width: calc((100% - 48px) / 3) ;
+    /* width: calc((100% - 48px) / 3) ; */
+    width: 100%;
+    max-width: 396px;
                
 }
 .list-made-overflow{
